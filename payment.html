@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaymentForm</title>
+    <link rel="stylesheet" href="paystyle.css" type="text/css" >
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="tick.jpg">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+        <script type="text/javascript">swal("Please give us a feedback:", {
+  content: "input",
+})
+    
+.then((value) => {
+  swal(`We appreciate your feedback`);
+});
+
+
+</script>
+    <div class="pay">
+        <h1> Payment Gateway </h1>
+        <div class="first-row">
+            <div class="Customer">
+                <h3>Card's Holder Name</h3>
+                <div class="input">
+                    <input type="text">
+                </div>
+            </div> 
+            <div class="Cvv">
+                <h3>Cvv</h3>
+                <div class="input">
+                    <input type="password" maxlength="3" placeholder="***">
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="Card Number">
+                <h3>Card Number</h3>
+                <div class="input">
+                    <input type="number" min="100000000000" max="999999999999" placeholder="xxxx-xxxx-xxxx-2312">
+                </div>
+            </div> 
+            
+        </div>
+        <div class="third-row">
+                <h3>Valid Upto</h3>
+                <div class="selection">
+                    <div class="date">
+                        <select name="months" id="months">
+                            <option value="Jan">JAN</option>
+                            <option value="Feb">Feb</option>
+                            <option value="Mar">Mar</option>
+                            <option value="Apr">Apr</option>
+                            <option value="May">May</option>
+                            <option value="Jun">Jun</option>
+                            <option value="Jul">Jul</option>
+                            <option value="Aug">Aug</option>
+                            <option value="Sep">Sep</option>
+                            <option value="Oct">Oct</option>
+                            <option value="Nov">Nov</option>
+                            <option value="Dec">Dec</option>
+                        </select>
+                        <select name="years" id="years">
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                            <option value="2031">2031</option>
+                        </select>                       
+                    </div>
+                    <div class="cards">
+                        <img src="ru.jpg" alt="" height="75px" width="100px">
+                        <img src="vi.jpg" alt="" height="75px" width="100px">
+                        <img src="mc.jpg" alt="" height="75px" width="100px">
+                        <img src="pp.jpg" alt="" height="75px" width="100px">
+                    </div>
+                </div>
+            </div>
+            <a href="Boy.html">Confirm</a>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,205 @@
+:root{
+    --main-color:#C71585;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+.header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 10000;
+    background: #160040;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 9%;
+}
+
+.header .logo{
+    font-weight: bolder;
+    color:#fff;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.header .logo span{
+    color:var(--main-color);
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color:#fff;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+}
+
+
+.content{
+padding:5rem 9%
+}
+
+.retirement img{
+float: left;
+gap: 10rem;
+
+}
+
+.retirement p{
+font-size:20px;
+color:brown;
+font-family:cursive;
+gap: 10rem;
+margin-left: 400px;
+}
+.farewell img{
+float: right;
+}
+
+.farewell p{
+font-size:25px;
+font-size:20px;
+color:brown;
+font-family:cursive;
+margin-right: 400px;
+}
+
+.newyear img{
+float: left;
+}
+
+.newyear p{
+font-size:25px;
+font-size:20px;
+color:brown;
+font-family:cursive;
+margin-left: 400px;
+}
+
+.cocktail img{
+float: right;
+}
+
+.cocktail p{
+font-size:25px;
+font-size:20px;
+color:brown;
+font-family:cursive;
+margin-right: 400px;
+}
+
+.abc input{
+    font-size: 40px;
+    color: black;
+    background-color: lightpink;
+ border-radius: 8px solid;}
+
+.anchor a{
+    text-decoration: none;
+    background-color: navy;
+    color: whitesmoke;
+    font-size: 40px;
+    
+    padding: 8px 10px;
+  text-align: center;
+    
+}
+.anchor a:hover{
+    opacity: 0.6;
+}
+
+.abc input {
+  background-color:#99ebff;
+   color:black;
+  /*padding: 8px;*/
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+ /*margin: 4px 4px;*/
+  cursor: pointer;
+  border: 2px solid ;
+}
+
+.selection select {
+  background-color:lightblue; 
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  /*text-decoration: none;*/
+  /*display: inline-block;*/
+  font-size: 30px;
+  /*margin: 2px 2px;*/
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.selection select {
+ color: black; 
+  border: 2px solid  ;}
+
+.selection select:hover {
+  background-color:lightcyan;
+  color: mediumblue;
+}
+.theme-toggler{
+    position: fixed;
+    top:10rem; right:-20rem;
+    background: #333;
+    z-index: 1000;
+    width: 20rem;
+    text-align: center;
+}
+
+.theme-toggler.active{
+    right:0;
+}
+
+.theme-toggler h3{
+    color:#fff;
+    padding:1rem 0;
+    font-size: 2rem;
+}
+
+.theme-toggler .buttons{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap:1rem;
+    padding:1rem;
+}
+
+.theme-toggler .buttons .theme-btn{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.theme-toggler .toggle-btn{
+    position: absolute;
+    top:0; left:-5.9rem;
+    padding:1.3rem 1.5rem;
+    background:#333;
+    cursor: pointer;
+}
+
+.theme-toggler .toggle-btn i{
+    color:#fff;
+    font-size: 3rem;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
